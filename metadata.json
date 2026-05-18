@@ -1,0 +1,6 @@
+{
+  "name": "Desert Shield",
+  "description": "Premium, technologically advanced security services for elite corporate and B2B clients in Saudi Arabia and the GCC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

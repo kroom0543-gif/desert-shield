@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Brand Colors - Refined for Elegant Dark */
+  --color-brand-black: #0F1115;
+  --color-brand-gold: #C8A34D;
+  --color-brand-blue: #15324A;
+  --color-brand-white: #FFFFFF;
+  --color-brand-charcoal: #2D2D2D;
+  --color-brand-gray-light: #1A1E26; /* Darker for the theme */
+
+  /* Shadows */
+  --shadow-premium: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --shadow-gold: 0 0 15px rgba(200, 163, 77, 0.3);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-white font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-white;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #0F1115 0%, #15324A 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, #0F1115 0%, rgba(15, 17, 21, 0.8) 50%, transparent 100%);
+}
+
+.grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* RTL Helpers */
+[dir="rtl"] {
+  font-family: 'Inter', 'Outfit', sans-serif; /* You might want to add a specific Arabic font here */
+}
